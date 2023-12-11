@@ -1,0 +1,68 @@
+{
+  "root": true,
+  "env": {
+    "commonjs": true,
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "prettier", "plugin:jsdoc/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["jsdoc", "react-hooks", "eslint-plugin-import", "@typescript-eslint"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "experimentalObjectRestSpread": true
+    },
+    "ecmaVersion": 2022,
+    "project": "./tsconfig.json"
+  },
+  "globals": {
+    "JSX": true
+  },
+  "rules": {
+    "jsdoc/require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "FunctionExpression": true,
+          "ClassDeclaration": true,
+          "MethodDefinition": true,
+          "ArrowFunctionExpression": true,
+          "ClassExpression": true
+        }
+      }
+    ],
+    "jsdoc/newline-after-description": 0,
+    "jsdoc/no-defaults": "off",
+    "jsdoc/tag-lines": "off",
+    "brace-style": "error",
+    "camelcase": [
+      "error",
+      {
+        "properties": "never"
+      }
+    ],
+    "curly": "error",
+    "no-debugger": "off",
+    "no-duplicate-imports": "error",
+    "no-empty": "off",
+    "no-multiple-empty-lines": "error",
+    "no-throw-literal": "error",
+    "prefer-arrow-callback": "error",
+    "react/prop-types": [0],
+    "react-hooks/exhaustive-deps": 1,
+    "max-len": ["error", 109],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/no-floating-promises": "error"
+  }
+}
