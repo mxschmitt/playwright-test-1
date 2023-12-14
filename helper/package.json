@@ -5,7 +5,6 @@
     "license": "UNLICENSED",
     "version": "1.0.1",
     "devDependencies": {
-        "@playwright/test": "^1.40.0",
         "@types/node": "^18.11.18",
         "@typescript-eslint/eslint-plugin": "^5.40.0",
         "@typescript-eslint/parser": "^5.40.0",
@@ -15,7 +14,6 @@
         "eslint-plugin-jsdoc": "^46.2.6",
         "eslint-plugin-prettier": "^4.2.1",
         "eslint-plugin-react-hooks": "^4.6.0",
-        "husky": "^8.0.2",
         "jsdoc": "^4.0.2",
         "lint-staged": "^13.1.0",
         "prettier": "^2.8.8"
@@ -26,7 +24,6 @@
     },
     "scripts": {
         "lint": "eslint --ext .jsx,.js,.ts,.tsx ./",
-        "prepare": "cd ../ && husky install",
         "build": "tsc"
     },
     "lint-staged": {

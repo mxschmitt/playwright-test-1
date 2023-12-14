@@ -17,7 +17,6 @@
         "prettier": "^2.8.8"
     },
     "dependencies": {
-        "@playwright/test": "^1.40.0",
         "dotenv": "^16.0.3",
         "helper": "file:../helper",
         "typescript": "^5.1.6"
